@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="nomVs">
+    <item>Tunis</item>
+    <item>Bizerte</item>
+    <item>Sousse</item>
+    <item>Monastir</item>
+    <item>Sfax</item>
+    <item>Kasserine</item>
+   <item>Gafsa</item>
+    <item>Béja</item>
+</string-array>
+    <string-array name="nomPark">
+        <item>Lafayette|Tunis</item>
+        <item>BabDjedid|Tunis</item>
+        <item>Palmarium|Tunis</item>
+        <item>Nasria|Sfax</item>
+        <item>Médina|Sfax</item>
+    </string-array>
+</resources>

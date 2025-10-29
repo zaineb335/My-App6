@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/t_l_chargement" />
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/nomV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liste des villes"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/lville"
+        android:layout_below="@id/nomV"
+       />
+    <TextView
+        android:id="@+id/nompark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liste des parking"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/lville"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/lPark"
+        android:layout_toEndOf="@id/lville"
+        android:layout_below="@id/nompark"
+
+        />
+
+
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/suiv"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:onClick="envoyer"
+        android:text="suivant" />
+</LinearLayout>
